@@ -32,7 +32,7 @@
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  display: inherit;  
+  display: inherit;
   z-index: 1;
   line-height: 1.3rem;
 }
