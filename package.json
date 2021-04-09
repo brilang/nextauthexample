@@ -1,24 +1,23 @@
 {
-  "name": "next-auth-example",
-  "version": "0.0.0",
+  "name": "nextauthexample",
+  "version": "0.1.0",
   "private": true,
   "description": "An example project for NextAuth.js",
-  "repository": "https://github.com/nextauthjs/next-auth-example.git",
+  "repository": "https://github.com/brilang/nextauthexample.git",
   "bugs": {
-    "url": "https://github.com/nextauthjs/next-auth/issues"
+    "url": "https://github.com/brilang/nextauthexample/issues"
   },
-  "homepage": "http://next-auth-example.now.sh",
+  "homepage": "",
   "main": "",
   "scripts": {
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
-  "author": "Iain Collins <me@iaincollins.com>",
+  "author": "Brian Lang",
   "contributors": [
-    "Balázs Orbán <info@balazsorban.com>"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "mongodb": "^3.6.6",
     "next": "^10.0.7",
