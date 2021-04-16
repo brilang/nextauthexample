@@ -1,8 +1,8 @@
 {
   "name": "nextauthexample",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
-  "description": "An example project for NextAuth.js",
+  "description": "An example project for NextAuth.js with the Notus NextJS theme from Createive Tim",
   "repository": "https://github.com/brilang/nextauthexample.git",
   "bugs": {
     "url": "https://github.com/brilang/nextauthexample/issues"
@@ -10,20 +10,45 @@
   "homepage": "",
   "main": "",
   "scripts": {
-    "dev": "next",
+    "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm run dev",
+    "build:tailwind": "tailwind build styles/index.css -o styles/tailwind.css"
   },
   "author": "Brian Lang",
   "contributors": [],
   "license": "MIT",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@popperjs/core": "^2.9.2",
+    "@tailwindcss/forms": "^0.3.2",
+    "chart.js": "^3.0.2",
     "mongodb": "^3.6.6",
     "next": "^10.0.7",
     "next-auth": "latest",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "reactstrap": "^8.9.0"
+    "react-scripts": "^4.0.3",
+    "tailwindcss": "^2.1.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.9"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

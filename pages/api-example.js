@@ -1,4 +1,4 @@
-import Layout from '../layouts/layout';
+import Layout from '../Layouts/Layout';
 
 export default function Page() {
   return (
@@ -10,10 +10,10 @@ export default function Page() {
       </p>
       <h2>Session</h2>
       <p>/api/examples/session</p>
-      <iframe src='/api/examples/session' />
+      <iframe src='/api/examples/session' title='session' />
       <h2>JSON Web Token</h2>
       <p>/api/examples/jwt</p>
-      <iframe src='/api/examples/jwt' />
+      <iframe src='/api/examples/jwt' title='jwt' />
     </Layout>
   );
 }

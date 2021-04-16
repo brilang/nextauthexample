@@ -1,4 +1,4 @@
-import Layout from '../layouts/layout';
+import Layout from '../Layouts/Layout';
 
 export default function Page() {
   return (
